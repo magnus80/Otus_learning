@@ -10,20 +10,23 @@ import org.testng.annotations.BeforeTest;
 import java.lang.reflect.Method;
 
 import static java.util.Arrays.asList;
+import static java.util.concurrent.TimeUnit.SECONDS;
 
 public class BaseTest {
 
-    private final ThreadLocal<WebDriver> driver = new ThreadLocal<WebDriver>();
+    private WebDriver driver;
     private static final Logger logger = LogManager.getLogger(BaseTest.class.getName());
 
     @BeforeTest
     public void setUp() {
         WebDriverManager.chromedriver().setup();
+        driver.manage().timeouts().implicitlyWait(10, SECONDS);
     }
 
     @BeforeMethod(alwaysRun = true)
     public void loggingSetUp(Method m, Object[] p) {
         logger.info("Start test: " + m.getName() + " with parameters " + asList(p));
+        driver.get("http://otus.ru");
     }
 
     @AfterMethod(alwaysRun = true)
@@ -33,7 +36,7 @@ public class BaseTest {
 
     @AfterTest
     public void tearDown() {
-        if (driver.get() != null)
-            driver.get().quit();
+        if (driver != null)
+            driver.quit();
     }
 }

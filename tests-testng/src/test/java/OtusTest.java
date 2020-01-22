@@ -7,11 +7,11 @@ import static org.testng.Assert.assertTrue;
 
 public class OtusTest extends BaseTest {
 
-
+    private static final Logger logger = LogManager.getLogger(OtusTest.class.getName());
+    private ChromeDriver driver = new ChromeDriver();
 
     @Test(description = "I can open site Otus.ru")
     public void ICanOpenOtusSiteTest() {
-        ChromeDriver driver = new ChromeDriver();
         driver.get("http://otus.ru");
         assertTrue(driver.findElementByXPath("//a[@class='header2__logo-img new-year']").isDisplayed());
     }
