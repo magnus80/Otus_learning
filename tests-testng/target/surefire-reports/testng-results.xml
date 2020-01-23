@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="SUITE" duration-ms="8682" started-at="2020-01-23T22:08:15 MSK" finished-at="2020-01-23T22:08:24 MSK">
+    <groups>
+    </groups>
+    <test name="Chrome" duration-ms="8682" started-at="2020-01-23T22:08:15 MSK" finished-at="2020-01-23T22:08:24 MSK">
+      <class name="OtusTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:OtusTest@2f9f7dcf]" name="setUp" is-config="true" duration-ms="449" started-at="2020-01-23T22:08:15 MSK" finished-at="2020-01-23T22:08:15 MSK">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="loggingSetUp(java.lang.reflect.Method, [Ljava.lang.Object;)[pri:0, instance:OtusTest@2f9f7dcf]" name="loggingSetUp" is-config="true" duration-ms="1" started-at="2020-01-23T22:08:15 MSK" finished-at="2020-01-23T22:08:15 MSK">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void OtusTest.ICanOpenOtusSiteTest()]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@62379589]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loggingSetUp -->
+        <test-method status="PASS" signature="ICanOpenOtusSiteTest()[pri:0, instance:OtusTest@2f9f7dcf]" name="ICanOpenOtusSiteTest" duration-ms="8211" started-at="2020-01-23T22:08:15 MSK" description="I can open site Otus.ru" finished-at="2020-01-23T22:08:24 MSK">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ICanOpenOtusSiteTest -->
+        <test-method status="PASS" signature="tearDown(java.lang.reflect.Method)[pri:0, instance:OtusTest@2f9f7dcf]" name="tearDown" is-config="true" duration-ms="0" started-at="2020-01-23T22:08:24 MSK" finished-at="2020-01-23T22:08:24 MSK">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void OtusTest.ICanOpenOtusSiteTest()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:OtusTest@2f9f7dcf]" name="tearDown" is-config="true" duration-ms="0" started-at="2020-01-23T22:08:24 MSK" finished-at="2020-01-23T22:08:24 MSK">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- OtusTest -->
+    </test> <!-- Chrome -->
+  </suite> <!-- SUITE -->
+</testng-results>

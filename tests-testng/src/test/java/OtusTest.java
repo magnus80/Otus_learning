@@ -12,7 +12,7 @@ public class OtusTest extends BaseTest {
     private static final Logger logger = LogManager.getLogger(OtusTest.class.getName());
 
     @Test(description = "I can open site Otus.ru")
-    public void ICanOpenOtusSiteTest() {
+    public void testCanOpenOtusSite() {
         WebDriver driver = new ChromeDriver();
         driver.get("http://otus.ru");
         logger.info("Opening http://otus.ru");
