@@ -1,11 +1,11 @@
-import io.github.bonigarcia.wdm.WebDriverManager;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import org.openqa.selenium.WebDriver;
-import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
-import org.testng.annotations.BeforeClass;
+import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.BeforeSuite;
+import ru.otus.Browsers;
+import ru.stqa.selenium.factory.WebDriverPool;
 
 import java.lang.reflect.Method;
 
@@ -13,12 +13,11 @@ import static java.util.Arrays.asList;
 
 public class BaseTest {
 
-    private WebDriver driver;
     private static final Logger logger = LogManager.getLogger(BaseTest.class.getName());
 
-    @BeforeClass
+    @BeforeSuite
     public void setUp() {
-        WebDriverManager.chromedriver().setup();
+        Browsers.CHROME.create();
     }
 
     @BeforeMethod(alwaysRun = true)
@@ -31,9 +30,8 @@ public class BaseTest {
         logger.info("End test: " + m.getName());
     }
 
-    @AfterClass
+    @AfterSuite
     public void tearDown() {
-        if (driver != null)
-            driver.quit();
+        WebDriverPool.DEFAULT.dismissAll();
     }
 }

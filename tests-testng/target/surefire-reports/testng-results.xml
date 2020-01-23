@@ -2,47 +2,47 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="SUITE" duration-ms="8682" started-at="2020-01-23T22:08:15 MSK" finished-at="2020-01-23T22:08:24 MSK">
+  <suite name="SUITE" duration-ms="7659" started-at="2020-01-23T22:58:58 MSK" finished-at="2020-01-23T22:59:06 MSK">
     <groups>
     </groups>
-    <test name="Chrome" duration-ms="8682" started-at="2020-01-23T22:08:15 MSK" finished-at="2020-01-23T22:08:24 MSK">
+    <test name="Chrome" duration-ms="7659" started-at="2020-01-23T22:58:58 MSK" finished-at="2020-01-23T22:59:06 MSK">
       <class name="OtusTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:OtusTest@2f9f7dcf]" name="setUp" is-config="true" duration-ms="449" started-at="2020-01-23T22:08:15 MSK" finished-at="2020-01-23T22:08:15 MSK">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:OtusTest@7d8995e]" name="setUp" is-config="true" duration-ms="5785" started-at="2020-01-23T22:58:53 MSK" finished-at="2020-01-23T22:58:58 MSK">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="loggingSetUp(java.lang.reflect.Method, [Ljava.lang.Object;)[pri:0, instance:OtusTest@2f9f7dcf]" name="loggingSetUp" is-config="true" duration-ms="1" started-at="2020-01-23T22:08:15 MSK" finished-at="2020-01-23T22:08:15 MSK">
+        <test-method status="PASS" signature="loggingSetUp(java.lang.reflect.Method, [Ljava.lang.Object;)[pri:0, instance:OtusTest@7d8995e]" name="loggingSetUp" is-config="true" duration-ms="1" started-at="2020-01-23T22:58:58 MSK" finished-at="2020-01-23T22:58:58 MSK">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void OtusTest.ICanOpenOtusSiteTest()]]>
+                <![CDATA[public void OtusTest.testCanOpenOtusSite()]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[[Ljava.lang.Object;@62379589]]>
+                <![CDATA[[Ljava.lang.Object;@31e4bb20]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loggingSetUp -->
-        <test-method status="PASS" signature="ICanOpenOtusSiteTest()[pri:0, instance:OtusTest@2f9f7dcf]" name="ICanOpenOtusSiteTest" duration-ms="8211" started-at="2020-01-23T22:08:15 MSK" description="I can open site Otus.ru" finished-at="2020-01-23T22:08:24 MSK">
+        <test-method status="PASS" signature="testCanOpenOtusSite()[pri:0, instance:OtusTest@7d8995e]" name="testCanOpenOtusSite" duration-ms="7640" started-at="2020-01-23T22:58:58 MSK" description="I can open site Otus.ru" finished-at="2020-01-23T22:59:06 MSK">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- ICanOpenOtusSiteTest -->
-        <test-method status="PASS" signature="tearDown(java.lang.reflect.Method)[pri:0, instance:OtusTest@2f9f7dcf]" name="tearDown" is-config="true" duration-ms="0" started-at="2020-01-23T22:08:24 MSK" finished-at="2020-01-23T22:08:24 MSK">
+        </test-method> <!-- testCanOpenOtusSite -->
+        <test-method status="PASS" signature="tearDown(java.lang.reflect.Method)[pri:0, instance:OtusTest@7d8995e]" name="tearDown" is-config="true" duration-ms="0" started-at="2020-01-23T22:59:06 MSK" finished-at="2020-01-23T22:59:06 MSK">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void OtusTest.ICanOpenOtusSiteTest()]]>
+                <![CDATA[public void OtusTest.testCanOpenOtusSite()]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:OtusTest@2f9f7dcf]" name="tearDown" is-config="true" duration-ms="0" started-at="2020-01-23T22:08:24 MSK" finished-at="2020-01-23T22:08:24 MSK">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:OtusTest@7d8995e]" name="tearDown" is-config="true" duration-ms="1145" started-at="2020-01-23T22:59:06 MSK" finished-at="2020-01-23T22:59:07 MSK">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
