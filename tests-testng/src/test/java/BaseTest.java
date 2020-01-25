@@ -1,5 +1,6 @@
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeMethod;
@@ -13,11 +14,12 @@ import static java.util.Arrays.asList;
 
 public class BaseTest {
 
-    private static final Logger logger = LogManager.getLogger(BaseTest.class.getName());
+    private static final Logger logger = LogManager.getLogger(BaseTest.class);
 
     @BeforeSuite
     public void setUp() {
-        Browsers.CHROME.create();
+        WebDriver driver = Browsers.CHROME.create();
+        driver.navigate().to("http://ya.ru");
     }
 
     @BeforeMethod(alwaysRun = true)
