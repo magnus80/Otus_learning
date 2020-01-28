@@ -1,24 +1,35 @@
 package ru.otus;
 
+import helpers.ChromeDriverProvider;
+import helpers.EdgeDriverProvider;
+import helpers.FirefoxDriverProvider;
+import helpers.HeadlessChromeDriverProvider;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.edge.EdgeDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
 
 public enum Browsers {
+
     CHROME {
+        @Override
         public WebDriver create() {
-            return new ChromeDriver();
+            return new ChromeDriverProvider().createWebDriver();
         }
     },
-    IE {
+    HEADLESS_CHROME {
+        @Override
         public WebDriver create() {
-            return new EdgeDriver();
+            return new HeadlessChromeDriverProvider().createWebDriver();
+        }
+    },
+    EDGE {
+        @Override
+        public WebDriver create() {
+            return new EdgeDriverProvider().createWebDriver();
         }
     },
     FIREFOX {
+        @Override
         public WebDriver create() {
-            return new FirefoxDriver();
+            return new FirefoxDriverProvider().createWebDriver();
         }
     };
 

@@ -31,10 +31,4 @@ public class YandexTests extends BaseTest {
         assertFalse(results.isEmpty());
     }
 
-  /*  @Test
-    public void testName() {
-        driver.navigate().to(baseUrl + "/pogoda");
-        driver.findElement(By.cssSelector("div[aria-labelledby='main_title'] div.temp.fact__temp.fact__temp_size_s  span.temp__value"));
-
-    }*/
 }
