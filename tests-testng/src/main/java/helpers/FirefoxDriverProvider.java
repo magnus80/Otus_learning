@@ -1,5 +1,6 @@
 package helpers;
 
+import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
@@ -24,7 +25,7 @@ public class FirefoxDriverProvider implements WebDriverProvider {
         options.addPreference("security.sandbox.content.level", 5);
         options.setProfile(profile);
         options.setAcceptInsecureCerts(true);
-
+        WebDriverManager.firefoxdriver().setup();
         return new FirefoxDriver(options);
     }
 }

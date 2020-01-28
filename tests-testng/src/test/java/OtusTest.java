@@ -7,6 +7,7 @@ import ru.otus.Browsers;
 
 import static org.openqa.selenium.By.cssSelector;
 import static org.testng.Assert.assertTrue;
+import static ru.otus.Browsers.CHROME;
 
 public class OtusTest extends BaseTest {
 
@@ -15,7 +16,7 @@ public class OtusTest extends BaseTest {
 
     @Test(description = "I can open site Otus.ru")
     public void testCanOpenOtusSite() {
-        driver = Browsers.CHROME.create();
+        driver = CHROME.create();
         driver.get("http://otus.ru");
         logger.info("Opening http://otus.ru");
         assertTrue(driver.findElement(cssSelector("div.header2__logo")).isDisplayed());

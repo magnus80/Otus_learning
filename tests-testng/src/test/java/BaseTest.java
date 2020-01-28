@@ -4,20 +4,22 @@ import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
-import ru.otus.Browsers;
 
 import java.lang.reflect.Method;
 
 import static java.util.Arrays.asList;
+import static java.util.concurrent.TimeUnit.SECONDS;
+import static ru.otus.Browsers.CHROME;
 
 public class BaseTest {
 
-    private WebDriver driver;
     private static final Logger logger = LogManager.getLogger(BaseTest.class.getName());
+    private static final int DEFAULT_WAIT_TIME = 5;
 
     @BeforeClass
     public void setUp() {
-        Browsers.CHROME.create();
+        WebDriver driver = CHROME.create();
+        driver.manage().timeouts().implicitlyWait(DEFAULT_WAIT_TIME, SECONDS);
     }
 
     @BeforeMethod(alwaysRun = true)
