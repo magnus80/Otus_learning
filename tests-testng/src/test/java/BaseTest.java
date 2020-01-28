@@ -31,9 +31,5 @@ public class BaseTest {
         logger.info("End test: " + m.getName());
     }
 
-    @AfterClass
-    public void tearDown() {
-        if (driver != null)
-            driver.quit();
-    }
+
 }
